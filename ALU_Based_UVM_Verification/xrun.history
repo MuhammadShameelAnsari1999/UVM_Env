@@ -1,0 +1,1 @@
+s1(19Sep2023:19:20:37):  xrun -clean -sv -uvm -access rwc -f ./run.f +UVM_TESTNAME=alu_test 

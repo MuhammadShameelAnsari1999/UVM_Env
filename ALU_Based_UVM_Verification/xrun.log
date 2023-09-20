@@ -1,0 +1,380 @@
+xrun(64): 20.09-s010: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s010: Started on Sep 19, 2023 at 19:20:37 PKT
+xrun
+	-clean
+	-sv
+	-uvm
+	-access rwc
+	-f ./run.f
+		-uvmhome /opt/cadence/installs/XCELIUM2009/tools/methodology/UVM/CDNS-1.2
+		./interface.sv
+		./design.sv
+		./testbench.sv
+	+UVM_TESTNAME=alu_test
+xrun: *N,CLEAN: Removing existing directory ./xcelium.d.
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /opt/cadence/installs/XCELIUM2009/tools/methodology/UVM/CDNS-1.2
+file: ./interface.sv
+	interface worklib.alu_interface:sv
+		errors: 0, warnings: 0
+file: ./design.sv
+	module worklib.alu:sv
+		errors: 0, warnings: 0
+file: ./testbench.sv
+	module worklib.top:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		$unit_0x2995b29a
+		top
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.alu:sv <0x3688acd9>
+			streams:   5, words:  1802
+		worklib.uvm_pkg:sv <0x2b126e8d>
+			streams:   6, words:  3460
+		worklib.uvm_pkg:sv <0x21f196d5>
+			streams:   6, words:  3120
+		worklib.uvm_pkg:sv <0x337343bf>
+			streams:   5, words:  2530
+		worklib.uvm_pkg:sv <0x2e1b2a7c>
+			streams:  25, words: 18486
+		worklib.uvm_pkg:sv <0x43d017e9>
+			streams:   7, words:  1927
+		worklib.uvm_pkg:sv <0x38613d98>
+			streams:  21, words: 50678
+		worklib.uvm_pkg:sv <0x45336019>
+			streams:   7, words:  1927
+		worklib.uvm_pkg:sv <0x0a5f3d27>
+			streams:   7, words:  3099
+		worklib.uvm_pkg:sv <0x1d0d6679>
+			streams:  24, words: 21331
+		worklib.uvm_pkg:sv <0x14786c4f>
+			streams:  24, words: 20383
+		worklib.uvm_pkg:sv <0x543dbb3e>
+			streams:  20, words: 20255
+		worklib.uvm_pkg:sv <0x7c65800a>
+			streams:  11, words:  4487
+		worklib.uvm_pkg:sv <0x52c3caac>
+			streams:  23, words: 30953
+		worklib.uvm_pkg:sv <0x16c23262>
+			streams:   7, words:  2431
+		worklib.uvm_pkg:sv <0x28b6570c>
+			streams:  12, words: 16433
+		worklib.uvm_pkg:sv <0x0b695f5d>
+			streams:  23, words: 26122
+		worklib.uvm_pkg:sv <0x0f638bbf>
+			streams:  22, words: 53996
+		worklib.uvm_pkg:sv <0x07d54cba>
+			streams:  25, words: 34549
+		worklib.uvm_pkg:sv <0x53525a74>
+			streams:  24, words: 49259
+		worklib.uvm_pkg:sv <0x592b9874>
+			streams:  25, words: 37475
+		worklib.uvm_pkg:sv <0x194433c0>
+			streams:  23, words: 56434
+		worklib.uvm_pkg:sv <0x572511b1>
+			streams:  25, words: 39553
+		worklib.uvm_pkg:sv <0x49119979>
+			streams:  23, words: 61527
+		worklib.uvm_pkg:sv <0x327ecb99>
+			streams:  25, words: 44036
+		worklib.uvm_pkg:sv <0x27104fd7>
+			streams:  23, words: 54055
+		worklib.uvm_pkg:sv <0x0b58d91d>
+			streams:  23, words: 57033
+		worklib.uvm_pkg:sv <0x55e2a3fc>
+			streams:  25, words: 36616
+		worklib.uvm_pkg:sv <0x10ea4f82>
+			streams:  23, words: 53683
+		worklib.uvm_pkg:sv <0x20cdb9ef>
+			streams:  25, words: 80424
+		worklib.uvm_pkg:sv <0x084cffe0>
+			streams:  54, words: 81493
+		worklib.cdns_uvm_pkg:sv <0x3e76d4e9>
+			streams:   9, words:  4566
+		worklib.cdns_uvm_pkg:sv <0x0504761e>
+			streams:  10, words:  8705
+		worklib.uvm_pkg:sv <0x4298da47>
+			streams:  22, words: 26878
+		worklib.uvm_pkg:sv <0x1c07ffc8>
+			streams:  23, words: 26495
+		worklib.uvm_pkg:sv <0x791826eb>
+			streams:  23, words: 26356
+		worklib.uvm_pkg:sv <0x1c0f0bd7>
+			streams:  17, words: 16251
+		worklib.uvm_pkg:sv <0x149cec86>
+			streams:  52, words: 53742
+		worklib.uvm_pkg:sv <0x29731be8>
+			streams:  23, words: 35047
+		worklib.uvm_pkg:sv <0x045960e9>
+			streams:   7, words:  3099
+		worklib.uvm_pkg:sv <0x38b349ed>
+			streams:  32, words: 37960
+		worklib.uvm_pkg:sv <0x0bd63e6b>
+			streams:   7, words:  3099
+		worklib.uvm_pkg:sv <0x0c3f1236>
+			streams: 263, words: 321819
+		worklib.uvm_pkg:sv <0x4688c512>
+			streams:  23, words: 29012
+		worklib.\$unit_0x2995b29a :compilation_unit <0x36884424>
+			streams:  23, words: 28817
+		worklib.uvm_pkg:sv <0x1985a814>
+			streams:  22, words: 23054
+		worklib.top:sv <0x6d2f1856>
+			streams:  66, words: 87402
+		worklib.\$unit_0x2995b29a :compilation_unit <0x1bd9b278>
+			streams:   0, words:     0
+		worklib.cdns_uvm_pkg:sv <0x40f7f962>
+			streams: 218, words: 387368
+		worklib.cdns_uvmapi:svp <0x06ed05d5>
+			streams:  27, words: 31790
+		worklib.cdns_assert2uvm_pkg:sv <0x567eb4f3>
+			streams:   3, words:  2285
+		worklib.uvm_pkg:sv <0x77a7fab1>
+			streams: 4665, words: 7644260
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                       Instances  Unique
+		Modules:                       2       2
+		Interfaces:                    1       1
+		Verilog packages:              4       4
+		Registers:                 16399   11672
+		Scalar wires:                  4       -
+		Vectored wires:                6       -
+		Named events:                  4      12
+		Always blocks:                 2       2
+		Initial blocks:              333     169
+		Parallel blocks:              27      28
+		Cont. assignments:             1       1
+		Pseudo assignments:            7       7
+		Assertions:                    3       3
+		Compilation units:             1       1
+		SV Class declarations:       233     349
+		SV Class specializations:    442     442
+	Writing initial simulation snapshot: worklib.top:sv
+Loading snapshot worklib.top:sv .................... Done
+SVSEED default: 1
+xmsim: *W,RNDXCELON: A newer version of the SystemVerilog constraint solver is being used which has better support for array-solving, new solve-order mechanism, and seed stability enhancements..
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /opt/cadence/installs/XCELIUM2009/tools/xcelium/files/xmsimrc
+xcelium> source /opt/cadence/installs/XCELIUM2009/tools/methodology/UVM/CDNS-1.2/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+UVM_INFO /opt/cadence/installs/XCELIUM2009/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh(412) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+CDNS-UVM-1.2 (20.09-s010)
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test alu_test...
+xmsim: *W,PRPASZ: Packed array at "worklib.uvm_pkg::uvm_string_to_bits.uvm_string_to_bits" of 115200 bits exceeds limit of 4096 - not probed
+ Use 'probe -create -packed 115200 worklib.uvm_pkg::uvm_string_to_bits.uvm_string_to_bits' or 'setenv SHM_PACKED_LIMIT 115200' to adjust limit.
+xmsim: *W,PRPASZ: Packed array at "worklib.uvm_pkg::uvm_bits_to_string.str" of 115200 bits exceeds limit of 4096 - not probed
+ Use 'probe -create -packed 115200 worklib.uvm_pkg::uvm_bits_to_string.str' or 'setenv SHM_PACKED_LIMIT 115200' to adjust limit.
+xmsim: *W,PRPASZ: Packed array at "worklib.cdns_uvm_pkg::_temp" of 115200 bits exceeds limit of 4096 - not probed
+ Use 'probe -create -packed 115200 worklib.cdns_uvm_pkg::_temp' or 'setenv SHM_PACKED_LIMIT 115200' to adjust limit.
+xmsim: *W,PRPASZ: Packed array at "worklib.cdns_uvm_pkg::_temp2" of 115200 bits exceeds limit of 4096 - not probed
+ Use 'probe -create -packed 115200 worklib.cdns_uvm_pkg::_temp2' or 'setenv SHM_PACKED_LIMIT 115200' to adjust limit.
+SDI/Verilog Transaction Recording Facility Version 20.09-s010
+UVM_INFO scoreboard.sv(106) @ 25: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 23, EXP= 23
+UVM_INFO scoreboard.sv(106) @ 33: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 23, EXP= 23
+UVM_INFO scoreboard.sv(106) @ 41: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 15, EXP= 15
+UVM_INFO scoreboard.sv(106) @ 49: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  2, EXP=  2
+UVM_INFO scoreboard.sv(106) @ 57: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  2, EXP=  2
+UVM_INFO scoreboard.sv(106) @ 65: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 90, EXP= 90
+UVM_INFO scoreboard.sv(106) @ 73: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 19, EXP= 19
+UVM_INFO scoreboard.sv(106) @ 81: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 19, EXP= 19
+UVM_INFO scoreboard.sv(106) @ 89: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 15, EXP= 15
+UVM_INFO scoreboard.sv(106) @ 97: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  7, EXP=  7
+UVM_INFO scoreboard.sv(106) @ 105: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  7, EXP=  7
+UVM_INFO scoreboard.sv(106) @ 113: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=108, EXP=108
+UVM_INFO scoreboard.sv(106) @ 121: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=112, EXP=112
+UVM_INFO scoreboard.sv(106) @ 129: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=112, EXP=112
+UVM_INFO scoreboard.sv(106) @ 137: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  1, EXP=  1
+UVM_INFO scoreboard.sv(106) @ 145: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  1, EXP=  1
+UVM_INFO scoreboard.sv(106) @ 153: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  1, EXP=  1
+UVM_INFO scoreboard.sv(106) @ 161: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 40, EXP= 40
+UVM_INFO scoreboard.sv(106) @ 169: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 77, EXP= 77
+UVM_INFO scoreboard.sv(106) @ 177: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 77, EXP= 77
+UVM_INFO scoreboard.sv(106) @ 185: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=162, EXP=162
+UVM_INFO scoreboard.sv(106) @ 193: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 17, EXP= 17
+UVM_INFO scoreboard.sv(106) @ 201: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 17, EXP= 17
+UVM_INFO scoreboard.sv(106) @ 209: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 12, EXP= 12
+UVM_INFO scoreboard.sv(106) @ 217: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 33, EXP= 33
+UVM_INFO scoreboard.sv(106) @ 225: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 33, EXP= 33
+UVM_INFO scoreboard.sv(106) @ 233: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  7, EXP=  7
+UVM_INFO scoreboard.sv(106) @ 241: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  9, EXP=  9
+UVM_INFO scoreboard.sv(106) @ 249: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  9, EXP=  9
+UVM_INFO scoreboard.sv(106) @ 257: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 14, EXP= 14
+UVM_INFO scoreboard.sv(106) @ 265: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 12, EXP= 12
+UVM_INFO scoreboard.sv(106) @ 273: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 12, EXP= 12
+UVM_INFO scoreboard.sv(106) @ 281: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 44, EXP= 44
+UVM_INFO scoreboard.sv(106) @ 289: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 23, EXP= 23
+UVM_INFO scoreboard.sv(106) @ 297: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 23, EXP= 23
+UVM_INFO scoreboard.sv(106) @ 305: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 24, EXP= 24
+UVM_INFO scoreboard.sv(106) @ 313: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 11, EXP= 11
+UVM_INFO scoreboard.sv(106) @ 321: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 11, EXP= 11
+UVM_INFO scoreboard.sv(106) @ 329: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  2, EXP=  2
+UVM_INFO scoreboard.sv(106) @ 337: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  1, EXP=  1
+UVM_INFO scoreboard.sv(106) @ 345: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  1, EXP=  1
+UVM_INFO scoreboard.sv(106) @ 353: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 44, EXP= 44
+UVM_INFO scoreboard.sv(106) @ 361: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  2, EXP=  2
+UVM_INFO scoreboard.sv(106) @ 369: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  2, EXP=  2
+UVM_INFO scoreboard.sv(106) @ 377: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 25, EXP= 25
+UVM_INFO scoreboard.sv(106) @ 385: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  5, EXP=  5
+UVM_INFO scoreboard.sv(106) @ 393: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  5, EXP=  5
+UVM_INFO scoreboard.sv(106) @ 401: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 13, EXP= 13
+UVM_INFO scoreboard.sv(106) @ 409: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  1, EXP=  1
+UVM_INFO scoreboard.sv(106) @ 417: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  1, EXP=  1
+UVM_INFO scoreboard.sv(106) @ 425: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 11, EXP= 11
+UVM_INFO scoreboard.sv(106) @ 433: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 16, EXP= 16
+UVM_INFO scoreboard.sv(106) @ 441: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 16, EXP= 16
+UVM_INFO scoreboard.sv(106) @ 449: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  3, EXP=  3
+UVM_INFO scoreboard.sv(106) @ 457: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  6, EXP=  6
+UVM_INFO scoreboard.sv(106) @ 465: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  6, EXP=  6
+UVM_INFO scoreboard.sv(106) @ 473: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=105, EXP=105
+UVM_INFO scoreboard.sv(106) @ 481: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 51, EXP= 51
+UVM_INFO scoreboard.sv(106) @ 489: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 51, EXP= 51
+UVM_INFO scoreboard.sv(106) @ 497: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 14, EXP= 14
+UVM_INFO scoreboard.sv(106) @ 505: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 15, EXP= 15
+UVM_INFO scoreboard.sv(106) @ 513: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 15, EXP= 15
+UVM_INFO scoreboard.sv(106) @ 521: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 96, EXP= 96
+UVM_INFO scoreboard.sv(106) @ 529: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  3, EXP=  3
+UVM_INFO scoreboard.sv(106) @ 537: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  3, EXP=  3
+UVM_INFO scoreboard.sv(106) @ 545: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 24, EXP= 24
+UVM_INFO scoreboard.sv(106) @ 553: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 26, EXP= 26
+UVM_INFO scoreboard.sv(106) @ 561: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 26, EXP= 26
+UVM_INFO scoreboard.sv(106) @ 569: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  9, EXP=  9
+UVM_INFO scoreboard.sv(106) @ 577: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  3, EXP=  3
+UVM_INFO scoreboard.sv(106) @ 585: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  3, EXP=  3
+UVM_INFO scoreboard.sv(106) @ 593: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  4, EXP=  4
+UVM_INFO scoreboard.sv(106) @ 601: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 10, EXP= 10
+UVM_INFO scoreboard.sv(106) @ 609: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 10, EXP= 10
+UVM_INFO scoreboard.sv(106) @ 617: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 48, EXP= 48
+UVM_INFO scoreboard.sv(106) @ 625: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 80, EXP= 80
+UVM_INFO scoreboard.sv(106) @ 633: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 80, EXP= 80
+UVM_INFO scoreboard.sv(106) @ 641: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 98, EXP= 98
+UVM_INFO scoreboard.sv(106) @ 649: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 96, EXP= 96
+UVM_INFO scoreboard.sv(106) @ 657: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 96, EXP= 96
+UVM_INFO scoreboard.sv(106) @ 665: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  2, EXP=  2
+UVM_INFO scoreboard.sv(106) @ 673: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 23, EXP= 23
+UVM_INFO scoreboard.sv(106) @ 681: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 23, EXP= 23
+UVM_INFO scoreboard.sv(106) @ 689: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 13, EXP= 13
+UVM_INFO scoreboard.sv(106) @ 697: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  2, EXP=  2
+UVM_INFO scoreboard.sv(106) @ 705: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  2, EXP=  2
+UVM_INFO scoreboard.sv(106) @ 713: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 17, EXP= 17
+UVM_INFO scoreboard.sv(106) @ 721: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  3, EXP=  3
+UVM_INFO scoreboard.sv(106) @ 729: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  3, EXP=  3
+UVM_INFO scoreboard.sv(106) @ 737: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=104, EXP=104
+UVM_INFO scoreboard.sv(106) @ 745: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 72, EXP= 72
+UVM_INFO scoreboard.sv(106) @ 753: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 72, EXP= 72
+UVM_INFO scoreboard.sv(106) @ 761: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  6, EXP=  6
+UVM_INFO scoreboard.sv(106) @ 769: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 13, EXP= 13
+UVM_INFO scoreboard.sv(106) @ 777: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 13, EXP= 13
+UVM_INFO scoreboard.sv(106) @ 785: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 10, EXP= 10
+UVM_INFO scoreboard.sv(106) @ 793: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  3, EXP=  3
+UVM_INFO scoreboard.sv(106) @ 801: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  3, EXP=  3
+UVM_INFO scoreboard.sv(106) @ 809: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 17, EXP= 17
+UVM_INFO scoreboard.sv(106) @ 817: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=153, EXP=153
+UVM_INFO scoreboard.sv(106) @ 825: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=153, EXP=153
+UVM_INFO scoreboard.sv(106) @ 833: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 16, EXP= 16
+UVM_INFO scoreboard.sv(106) @ 841: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 24, EXP= 24
+UVM_INFO scoreboard.sv(106) @ 849: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 24, EXP= 24
+UVM_INFO scoreboard.sv(106) @ 857: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 75, EXP= 75
+UVM_INFO scoreboard.sv(106) @ 865: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 85, EXP= 85
+UVM_INFO scoreboard.sv(106) @ 873: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 85, EXP= 85
+UVM_INFO scoreboard.sv(106) @ 881: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 14, EXP= 14
+UVM_INFO scoreboard.sv(106) @ 889: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  9, EXP=  9
+UVM_INFO scoreboard.sv(106) @ 897: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  9, EXP=  9
+UVM_INFO scoreboard.sv(106) @ 905: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  7, EXP=  7
+UVM_INFO scoreboard.sv(106) @ 913: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  5, EXP=  5
+UVM_INFO scoreboard.sv(106) @ 921: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  5, EXP=  5
+UVM_INFO scoreboard.sv(106) @ 929: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 10, EXP= 10
+UVM_INFO scoreboard.sv(106) @ 937: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  1, EXP=  1
+UVM_INFO scoreboard.sv(106) @ 945: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  1, EXP=  1
+UVM_INFO scoreboard.sv(106) @ 953: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 22, EXP= 22
+UVM_INFO scoreboard.sv(106) @ 961: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 22, EXP= 22
+UVM_INFO scoreboard.sv(106) @ 969: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 22, EXP= 22
+UVM_INFO scoreboard.sv(106) @ 977: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 84, EXP= 84
+UVM_INFO scoreboard.sv(106) @ 985: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 65, EXP= 65
+UVM_INFO scoreboard.sv(106) @ 993: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 65, EXP= 65
+UVM_INFO scoreboard.sv(106) @ 1001: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 10, EXP= 10
+UVM_INFO scoreboard.sv(106) @ 1009: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  1, EXP=  1
+UVM_INFO scoreboard.sv(106) @ 1017: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  1, EXP=  1
+UVM_INFO scoreboard.sv(106) @ 1025: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  6, EXP=  6
+UVM_INFO scoreboard.sv(106) @ 1033: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 13, EXP= 13
+UVM_INFO scoreboard.sv(106) @ 1041: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 13, EXP= 13
+UVM_INFO scoreboard.sv(106) @ 1049: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 10, EXP= 10
+UVM_INFO scoreboard.sv(106) @ 1057: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  5, EXP=  5
+UVM_INFO scoreboard.sv(106) @ 1065: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  5, EXP=  5
+UVM_INFO scoreboard.sv(106) @ 1073: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 10, EXP= 10
+UVM_INFO scoreboard.sv(106) @ 1081: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  9, EXP=  9
+UVM_INFO scoreboard.sv(106) @ 1089: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  9, EXP=  9
+UVM_INFO scoreboard.sv(106) @ 1097: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 60, EXP= 60
+UVM_INFO scoreboard.sv(106) @ 1105: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  1, EXP=  1
+UVM_INFO scoreboard.sv(106) @ 1113: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  1, EXP=  1
+UVM_INFO scoreboard.sv(106) @ 1121: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 15, EXP= 15
+UVM_INFO scoreboard.sv(106) @ 1129: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 25, EXP= 25
+UVM_INFO scoreboard.sv(106) @ 1137: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 25, EXP= 25
+UVM_INFO scoreboard.sv(106) @ 1145: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 17, EXP= 17
+UVM_INFO scoreboard.sv(106) @ 1153: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  3, EXP=  3
+UVM_INFO scoreboard.sv(106) @ 1161: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  3, EXP=  3
+UVM_INFO scoreboard.sv(106) @ 1169: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 24, EXP= 24
+UVM_INFO scoreboard.sv(106) @ 1177: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  4, EXP=  4
+UVM_INFO scoreboard.sv(106) @ 1185: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=  4, EXP=  4
+UVM_INFO scoreboard.sv(106) @ 1193: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT= 17, EXP= 17
+UVM_INFO scoreboard.sv(106) @ 1201: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=110, EXP=110
+UVM_INFO scoreboard.sv(106) @ 1209: uvm_test_top.env.scb [COMPARE] Transaction Passed! ACT=110, EXP=110
+UVM_INFO /opt/cadence/installs/XCELIUM2009/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_objection.svh(1271) @ 1215: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /opt/cadence/installs/XCELIUM2009/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_report_catcher.svh(705) @ 1215: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /opt/cadence/installs/XCELIUM2009/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_report_server.svh(847) @ 1215: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  153
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[COMPARE]   149
+[RNTST]     1
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+
+Simulation complete via $finish(1) at time 1215 NS + 59
+/opt/cadence/installs/XCELIUM2009/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh:543     $finish;
+xcelium> exit
+TOOL:	xrun(64)	20.09-s010: Exiting on Sep 19, 2023 at 19:20:44 PKT  (total: 00:00:07)
